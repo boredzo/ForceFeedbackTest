@@ -13,6 +13,11 @@
 		317F6F8E1839DC040098E528 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 317F6F8C1839DC040098E528 /* Credits.rtf */; };
 		317F6F911839DC040098E528 /* PRHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317F6F901839DC040098E528 /* PRHAppDelegate.m */; };
 		317F6F941839DC050098E528 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317F6F921839DC050098E528 /* MainMenu.xib */; };
+		317F6F9D1839DC440098E528 /* PRHForceFeedbackWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317F6F9B1839DC440098E528 /* PRHForceFeedbackWindowController.m */; };
+		317F6FB01839E2640098E528 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F6FAF1839E2640098E528 /* IOKit.framework */; };
+		317F6FB21839E2DA0098E528 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F6FB11839E2DA0098E528 /* ForceFeedback.framework */; };
+		317F6FB51839EAF20098E528 /* PRHDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317F6FB41839EAF20098E528 /* PRHDeviceInfoViewController.m */; };
+		317F6FB6183A03C30098E528 /* PRHForceFeedbackWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317F6FB8183A03C30098E528 /* PRHForceFeedbackWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,13 @@
 		317F6F8F1839DC040098E528 /* PRHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRHAppDelegate.h; sourceTree = "<group>"; };
 		317F6F901839DC040098E528 /* PRHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRHAppDelegate.m; sourceTree = "<group>"; };
 		317F6F931839DC050098E528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		317F6F9A1839DC440098E528 /* PRHForceFeedbackWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHForceFeedbackWindowController.h; sourceTree = "<group>"; };
+		317F6F9B1839DC440098E528 /* PRHForceFeedbackWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHForceFeedbackWindowController.m; sourceTree = "<group>"; };
+		317F6FAF1839E2640098E528 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		317F6FB11839E2DA0098E528 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		317F6FB31839EAF20098E528 /* PRHDeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHDeviceInfoViewController.h; sourceTree = "<group>"; };
+		317F6FB41839EAF20098E528 /* PRHDeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHDeviceInfoViewController.m; sourceTree = "<group>"; };
+		317F6FB7183A03C30098E528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/PRHForceFeedbackWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				317F6F7E1839DC040098E528 /* Cocoa.framework in Frameworks */,
+				317F6FB01839E2640098E528 /* IOKit.framework in Frameworks */,
+				317F6FB21839E2DA0098E528 /* ForceFeedback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				317F6F7D1839DC040098E528 /* Cocoa.framework */,
+				317F6FAF1839E2640098E528 /* IOKit.framework */,
+				317F6FB11839E2DA0098E528 /* ForceFeedback.framework */,
 				317F6F7F1839DC040098E528 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -85,6 +101,11 @@
 				317F6F8F1839DC040098E528 /* PRHAppDelegate.h */,
 				317F6F901839DC040098E528 /* PRHAppDelegate.m */,
 				317F6F921839DC050098E528 /* MainMenu.xib */,
+				317F6F9A1839DC440098E528 /* PRHForceFeedbackWindowController.h */,
+				317F6F9B1839DC440098E528 /* PRHForceFeedbackWindowController.m */,
+				317F6FB8183A03C30098E528 /* PRHForceFeedbackWindowController.xib */,
+				317F6FB31839EAF20098E528 /* PRHDeviceInfoViewController.h */,
+				317F6FB41839EAF20098E528 /* PRHDeviceInfoViewController.m */,
 				317F6F841839DC040098E528 /* Supporting Files */,
 			);
 			path = ForceFeedbackTest;
@@ -157,6 +178,7 @@
 				317F6F881839DC040098E528 /* InfoPlist.strings in Resources */,
 				317F6F8E1839DC040098E528 /* Credits.rtf in Resources */,
 				317F6F941839DC050098E528 /* MainMenu.xib in Resources */,
+				317F6FB6183A03C30098E528 /* PRHForceFeedbackWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +191,8 @@
 			files = (
 				317F6F8A1839DC040098E528 /* main.m in Sources */,
 				317F6F911839DC040098E528 /* PRHAppDelegate.m in Sources */,
+				317F6F9D1839DC440098E528 /* PRHForceFeedbackWindowController.m in Sources */,
+				317F6FB51839EAF20098E528 /* PRHDeviceInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +221,14 @@
 				317F6F931839DC050098E528 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		317F6FB8183A03C30098E528 /* PRHForceFeedbackWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317F6FB7183A03C30098E528 /* en */,
+			);
+			name = PRHForceFeedbackWindowController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +336,7 @@
 				317F6F991839DC050098E528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
